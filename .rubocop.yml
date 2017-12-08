@@ -1,0 +1,40 @@
+AllCops:
+  TargetRubyVersion: 2.3
+  Exclude:
+    - bin/**/*
+    - node_modules/**/*
+    - app/admin/*
+    - script/**/*
+    - tmp/**/*
+    - config/unicorn/*
+    - vendor/**/*
+    - config/boot.rb
+    - db/schema.rb
+    - Rakefile
+    - Gemfile
+    - Guardfile
+  DisplayCopNames: true
+
+Rails:
+  Enabled: true
+
+Style/EmptyMethod:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Metrics/LineLength:
+  Enabled: false
+
+Style/AsciiComments:
+  Enabled: false
+
+Metrics/MethodLength:
+  Max: 20
