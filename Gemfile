@@ -47,6 +47,9 @@ gem 'paranoia'
 gem 'bootstrap-sass'
 gem 'font-awesome-rails'
 
+# Form
+gem 'simple_form'
+
 # Fast Haml
 gem 'faml'
 

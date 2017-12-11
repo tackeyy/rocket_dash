@@ -360,6 +360,9 @@ GEM
       activesupport (>= 3.1)
     sexp_processor (4.10.0)
     shellany (0.0.1)
+    simple_form (3.5.0)
+      actionpack (> 4, < 5.2)
+      activemodel (> 4, < 5.2)
     sorcery (0.11.0)
       bcrypt (~> 3.1)
       oauth (~> 0.4, >= 0.4.4)
@@ -455,6 +458,7 @@ DEPENDENCIES
   rubocop
   sass-rails (~> 5.0)
   seed-fu
+  simple_form
   sorcery
   spring
   spring-watcher-listen (~> 2.0.0)

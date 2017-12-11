@@ -1,0 +1,22 @@
+ja:
+  activerecord:
+    models:
+      user: ユーザー
+    attributes:
+      user:
+        email: メールアドレス
+    errors:
+      models:
+        user:
+          attributes:
+            name:
+              blank: ユーザー名を入力してください。
+              too_long: ユーザー名は8文字以内にしてください。
+            email:
+              blank: メールアドレスを入力してください。
+              not_found_or_invalid_password: メールもしくはパスワードが異なります。
+            password:
+              blank: パスワードを入力してください。
+              too_short: パスワードは8文字以上にしてください。
+            password_confirmation:
+              blank: パスワードを入力してください。
