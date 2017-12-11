@@ -56,6 +56,9 @@ gem 'kaminari'
 # Breadcrumbs
 gem 'gretel'
 
+# Authentication
+gem 'sorcery'
+
 group :deployment do
   # Deploy
   gem 'capistrano'
