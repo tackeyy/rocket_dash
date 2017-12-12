@@ -40,12 +40,21 @@ gem 'seed-fu'
 
 # Logical delete
 gem 'paranoia'
+gem 'paranoia_uniqueness_validator'
+
+# Validation
+gem 'validate_url'
+gem 'validates_email_format_of'
+
 # ============================
 # View
 # ============================
 # Bootstrap & Bootswatch & font-awesome
 gem 'bootstrap-sass'
 gem 'font-awesome-rails'
+
+# Form
+gem 'simple_form'
 
 # Fast Haml
 gem 'faml'
@@ -55,6 +64,9 @@ gem 'kaminari'
 
 # Breadcrumbs
 gem 'gretel'
+
+# Authentication
+gem 'sorcery'
 
 group :deployment do
   # Deploy

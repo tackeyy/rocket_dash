@@ -1,0 +1,7 @@
+%h1 #{User.model_name.human}登録
+
+= simple_form_for @user, url: users_sign_up_path do |f|
+  = f.input :email, as: :email
+  = f.input :password, as: :password
+  = f.input :password_confirmation, as: :password
+  = f.button :submit, "#{User.model_name.human}登録"

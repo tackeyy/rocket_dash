@@ -13,3 +13,17 @@
  *= require_tree .
  *= require_self
  */
+
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+@import 'font-awesome';
+
+.header {
+  margin-top: 3rem;
+
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+  }
+}
