@@ -14,7 +14,7 @@ ja:
               too_long: ユーザー名は8文字以内にしてください。
             email:
               blank: メールアドレスを入力してください。
-              not_found_or_invalid_password: メールもしくはパスワードが異なります。
+              not_found_or_invalid_password: メールアドレスもしくはパスワードが異なります。
               invalid_email_address: 不正なメールアドレスです。
             password:
               blank: パスワードを入力してください。
