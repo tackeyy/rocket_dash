@@ -8,4 +8,16 @@
     = javascript_include_tag 'application'
   %body
     .container
+      .header.clearfix
+        %nav
+          %ul.nav.nav-pills.pull-right
+            - if logged_in?
+              %li
+                = link_to 'Sign out', users_sign_out_path(@current_user), method: :delete, class: %w[btn btn-danger]
+            - else
+              %li
+                = link_to 'Sign up', users_sign_up_path, class: %w[btn btn-success]
+              %li
+                = link_to 'Sign in', users_sign_in_path, class: %w[btn btn-primary]
+        %h3.text-muted Project name
       = yield

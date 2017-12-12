@@ -40,6 +40,12 @@ gem 'seed-fu'
 
 # Logical delete
 gem 'paranoia'
+gem 'paranoia_uniqueness_validator'
+
+# Validation
+gem 'validate_url'
+gem 'validates_email_format_of'
+
 # ============================
 # View
 # ============================
