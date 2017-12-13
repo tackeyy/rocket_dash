@@ -113,6 +113,9 @@ group :development do
 
   # Live load browser
   gem 'guard-livereload', require: false
+
+  # Email
+  gem 'letter_opener_web'
 end
 
 group :development, :test do

@@ -1,4 +1,5 @@
-%h1= class_name + "#" + @action
+Welcome to example.com, #{@user.email}
 
-%p
-  = @greeting + ", find me in app/views/user_mailer/activation_needed_email.html.haml"
+To login to the site, just follow this link: #{@url}
+
+Thanks for joining and have a great day!

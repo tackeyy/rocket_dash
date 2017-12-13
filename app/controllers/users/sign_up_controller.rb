@@ -11,9 +11,7 @@ class Users::SignUpController < UsersController
 
     return render :show if @user.errors.present?
 
-    auto_login(@user)
-
-    redirect_to root_url
+    redirect_to root_url, notice: "登録確認#{User.human_attribute_name(:email)}を送信しました。"
   end
 
   private
