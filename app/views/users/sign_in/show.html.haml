@@ -4,3 +4,7 @@
   = f.input :email, as: :email
   = f.input :password, as: :password
   = f.button :submit, 'ログイン'
+
+.container
+  = link_to "#{User.human_attribute_name(:password)}を忘れた方はこちら", root_path
+  = link_to "登録確認メールを再送信する方はこちら", users_resend_activation_token_path
