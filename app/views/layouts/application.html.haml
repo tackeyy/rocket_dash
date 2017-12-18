@@ -7,6 +7,7 @@
     = stylesheet_link_tag    'application', media: 'all'
     = javascript_include_tag 'application'
   %body
+    = render 'layouts/flash'
     .container
       .header.clearfix
         %nav
@@ -19,5 +20,6 @@
                 = link_to 'Sign up', users_sign_up_path, class: %w[btn btn-success]
               %li
                 = link_to 'Sign in', users_sign_in_path, class: %w[btn btn-primary]
-        %h3.text-muted RocketDash
+        %h3.text-muted
+          = link_to RocketDash, root_path
       = yield
