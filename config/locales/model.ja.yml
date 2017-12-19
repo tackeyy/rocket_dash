@@ -13,6 +13,7 @@ ja:
               blank: ユーザー名を入力してください。
               too_long: ユーザー名は8文字以内にしてください。
             email:
+              taken: 登録済もしくは登録確認が完了していないメールアドレスです。
               blank: メールアドレスを入力してください。
               not_found_or_invalid_password: メールアドレスもしくはパスワードが異なります。
               invalid_email_address: 不正なメールアドレスです。
