@@ -1,0 +1,9 @@
+%h1 #{User.human_attribute_name(:password)}変更
+
+= simple_form_for @user, url: users_password_reset_path do |f|
+  = f.input :password, as: :password
+  = f.input :password_confirmation, as: :password
+  = f.button :submit, "#{User.human_attribute_name(:password)}変更"
+
+.container
+  = link_to "登録確認メールを再送信する方はこちら", users_resend_activation_token_path

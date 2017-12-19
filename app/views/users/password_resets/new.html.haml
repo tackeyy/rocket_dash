@@ -1,0 +1,8 @@
+%h1 パスワードリセット
+
+= simple_form_for @user, url: users_password_resets_path do |f|
+  = f.input :email, as: :email
+  = f.button :submit, "#{User.human_attribute_name(:password)}リセット"
+
+.container
+  = link_to "登録確認メールを再送信する方はこちら", users_resend_activation_token_path

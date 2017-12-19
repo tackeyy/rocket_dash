@@ -30,11 +30,17 @@ Style/FrozenStringLiteralComment:
 Style/Documentation:
   Enabled: false
 
-Metrics/LineLength:
+Style/AsciiComments:
   Enabled: false
 
-Style/AsciiComments:
+Style/ClassAndModuleChildren:
   Enabled: false
 
 Metrics/MethodLength:
   Max: 20
+
+Metrics/LineLength:
+  Enabled: false
+
+Metrics/AbcSize:
+  Max: 18
