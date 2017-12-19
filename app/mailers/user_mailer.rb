@@ -20,4 +20,11 @@ class UserMailer < ApplicationMailer
     @url  = 'http://0.0.0.0:3000/users/sign_in'
     mail(to: user.email, subject: 'Your account is now activated')
   end
+
+  def reset_password_email(user)
+    @user = User.find user.id
+    @url  = edit_users_password_reset_url(@user.reset_password_token)
+    mail(:to => user.email,
+         :subject => "Your password has been reset")
+  end
 end
