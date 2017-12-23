@@ -11,7 +11,8 @@ class Users::SignUpController < UsersController
 
     return render :show if @user.errors.present?
 
-    redirect_to root_url, notice: "登録確認#{User.human_attribute_name(:email)}を送信しました。"
+    flash[:success] = t('view.sign_up.success')
+    redirect_to root_url
   end
 
   private

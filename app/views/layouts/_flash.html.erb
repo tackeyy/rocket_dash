@@ -1,12 +1,12 @@
 <%
   flash.each do |msg_type, message|
     next if msg_type == 'timedout'
-    concat(content_tag(:div, message, class: "full-width-alert tl_c alert text-center alert-position #{flash_class_for(msg_type)} alert-dismissible fade in", role: 'alert') do
+    concat(content_tag(:div, class: "full-width-alert tl_c alert text-center alert-position #{flash_class_for(msg_type)} alert-dismissible fade in", role: 'alert') do
       concat (content_tag(:span) do
         concat content_tag(:span, "×", class: "close", "aria-hidden": true, data: { dismiss: "alert" })
         concat content_tag(:span, 'close', class: 'sr-only')
       end)
-      concat message
+      concat simple_format(h(message))
     end)
     # "Added clearing of flash messages after initial page view" https://gist.github.com/suryart/7418454
     flash.clear
