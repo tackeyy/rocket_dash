@@ -68,6 +68,9 @@ gem 'gretel'
 # Authentication
 gem 'sorcery'
 
+# Configuration
+gem 'config'
+
 group :deployment do
   # Deploy
   gem 'capistrano'
