@@ -1,5 +1,6 @@
-Welcome to example.com, #{@user.email}
+%h1 #{@user.email} 様
 
-To login to the site, just follow this link: #{@url}
+%P #{Settings.service.name}にご登録いただき、ありがとうございます。<br>以下のボタンをクリックして#{User.human_attribute_name(:password)}登録を完了させてください。
 
-Thanks for joining and have a great day!
+.text-center
+  = link_to "#{User.human_attribute_name(:email)}を確認する", @url, class: %w(btn btn-success), target: '_blank'

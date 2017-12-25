@@ -5,7 +5,8 @@ class Users::ActivateController < ApplicationController
     # NOTE: id = activation_token
     if (@user = User.load_from_activation_token(params[:id]))
       @user.activate!
-      redirect_to(users_sign_in_path, notice: 'User was successfully activated.')
+      flash[:success] = t('view.users.activate.success')
+      redirect_to users_sign_in_url
     else
       not_authenticated
     end

@@ -1,7 +1,6 @@
-UserMailer#activation_needed_email
-Welcome to example.com, #{@user.email}
-===============================================
+#{@user.email} 様
 
-You have successfully signed up to example.com,
+#{Settings.service.name}にご登録いただき、ありがとうございます。
+以下のボタンをクリックして#{User.human_attribute_name(:password)}登録を完了させてください。
 
-Thanks for joining and have a great day!
+#{@url}
