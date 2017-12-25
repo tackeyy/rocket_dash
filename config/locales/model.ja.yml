@@ -5,6 +5,7 @@ ja:
     attributes:
       user:
         email: メールアドレス
+        password: パスワード
     errors:
       models:
         user:

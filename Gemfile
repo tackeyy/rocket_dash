@@ -71,6 +71,9 @@ gem 'sorcery'
 # Configuration
 gem 'config'
 
+# HTML email support
+gem 'premailer-rails'
+
 group :deployment do
   # Deploy
   gem 'capistrano'
@@ -131,9 +134,6 @@ group :development, :test do
   # Show SQL result in Pry console
   gem 'awesome_print'
   gem 'hirb'
-
-  # Checks email
-  gem 'letter_opener_web'
 
   # PG/MySQL Log Formatter
   gem 'rails-flog'

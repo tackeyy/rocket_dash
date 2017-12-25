@@ -1,6 +1,6 @@
 %h1 登録確認メール再送
 
-= simple_form_for @user, url: users_resend_activation_token_path do |f|
+= simple_form_for @user, url: users_resend_activation_token_path, method: :post do |f|
   = f.input :email, as: :email
   = f.input :password, as: :password
   = f.button :submit, '再送'

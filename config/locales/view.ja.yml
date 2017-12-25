@@ -1,4 +1,11 @@
 ja:
   view:
-    sign_up:
-      success: "登録確認メールを送信しました。\nメールに記載されたリンクから登録を完了してください。"
+    users:
+      sign_up:
+        success: "登録確認メールを送信しました。\nメールに記載されたリンクから登録を完了してください。"
+      activate:
+        success: "登録が完了しました。"
+      resend_activation_token:
+        success: "登録確認メールを再送信しました。\nメールに記載されたリンクから登録を完了してください。"
+        failure:
+          already_activated: "すでに登録確認済のユーザーのためログインしてください。"

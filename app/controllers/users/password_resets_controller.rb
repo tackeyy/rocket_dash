@@ -11,7 +11,8 @@ class Users::PasswordResetsController < UsersController
 
     @user.deliver_reset_password_instructions! if @user.present?
 
-    redirect_to(root_url, notice: 'Instructions have been sent to your email.')
+    flash[:success] = "#{User.human_attribute_name(:password)}変更確認メールを送信しました。\nメールに記載されたURLからパスワード変更を完了してください。"
+    redirect_to root_url
   end
 
   def edit
@@ -31,7 +32,8 @@ class Users::PasswordResetsController < UsersController
     @user.password_confirmation = user_params[:password_confirmation]
 
     if @user.change_password!(user_params[:password])
-      redirect_to(root_path, notice: 'Password was successfully updated.')
+      flash[:success] = "#{User.human_attribute_name(:password)}変更が完了しました。"
+      redirect_to users_sign_in_url
     else
       render :edit
     end

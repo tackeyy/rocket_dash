@@ -1,1 +1,6 @@
-Yes!
+%h1 #{@user.email} 様
+
+%P #{User.model_name.human}登録が完了しました。
+
+.text-center
+  = link_to 'ログインする', @url, class: %w(btn btn-success), target: '_blank'
