@@ -206,7 +206,7 @@ Session.vim
 tags
 
 .env
-.env*
+# .env*
 
 node_modules/
 /public/packs
