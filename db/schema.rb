@@ -14,6 +14,7 @@ ActiveRecord::Schema.define(version: 20171213072158) do
 
   create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "email", null: false
+    t.string "type"
     t.string "crypted_password"
     t.string "salt"
     t.string "remember_me_token"
@@ -32,6 +33,7 @@ ActiveRecord::Schema.define(version: 20171213072158) do
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["remember_me_token"], name: "index_users_on_remember_me_token"
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token"
+    t.index ["type"], name: "index_users_on_type"
   end
 
 end

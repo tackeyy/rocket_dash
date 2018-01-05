@@ -1,0 +1,37 @@
+!!!
+%html
+  %head
+    %title #{Settings.service.name}
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}
+    %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}/
+    / Tell the browser to be responsive to screen width
+    %meta{:content => "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no", :name => "viewport"}/
+
+    = csrf_meta_tags
+    = stylesheet_link_tag    'admin/application', media: 'all'
+    = javascript_include_tag 'admin/application'
+
+  %body.hold-transition.skin-blue.sidebar-mini
+    .wrapper
+      = render 'admin/layouts/header'
+      = render 'admin/layouts/sidebar'
+      .content-wrapper
+        %section.content-header
+          %h1
+            Page Header
+            %small Optional description
+          %ol.breadcrumb
+            %li
+              %a{:href => "#"}
+                %i.fa.fa-dashboard
+                Level
+            %li.active Here
+        %section.content.container-fluid
+          = yield
+
+      %footer.main-footer
+        .pull-right.hidden-xs
+          Anything you want
+        %strong
+          Copyright © 2016
+        All rights reserved.

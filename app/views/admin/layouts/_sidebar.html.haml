@@ -1,0 +1,28 @@
+%aside.main-sidebar
+  / sidebar: style can be found in sidebar.less
+  %section.sidebar
+    / Sidebar Menu
+    %ul.sidebar-menu{"data-widget" => "tree"}
+      %li.header 機能一覧
+      / Optionally, you can add icons to the links
+      %li.active
+        %a{:href => "#"}
+          %i.fa.fa-link
+          %span Link
+      %li
+        %a{:href => "#"}
+          %i.fa.fa-link
+          %span Another Link
+      %li.treeview
+        %a{:href => "#"}
+          %i.fa.fa-link
+          %span Multilevel
+          %span.pull-right-container
+            %i.fa.fa-angle-left.pull-right
+        %ul.treeview-menu
+          %li
+            %a{:href => "#"} Link in level 2
+          %li
+            %a{:href => "#"} Link in level 2
+    / /.sidebar-menu
+  / /.sidebar

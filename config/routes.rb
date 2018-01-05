@@ -3,6 +3,10 @@ Rails.application.routes.draw do
 
   root 'home#index'
 
+  namespace :admin do
+    get 'dashboard', to: 'dashboard#index'
+  end
+
   resource :users, only: [] do
     resource :sign_up, controller: 'users/sign_up', only: %i[show create]
     resource :sign_in, controller: 'users/sign_in', only: %i[show create]
