@@ -105,7 +105,7 @@ GEM
     crass (1.0.3)
     css_parser (1.6.0)
       addressable
-    database_rewinder (0.8.2)
+    database_rewinder (0.8.3)
     debug_inspector (0.0.3)
     deep_merge (1.1.1)
     diff-lcs (1.3)
